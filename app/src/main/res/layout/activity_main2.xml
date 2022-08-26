@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/back"
+                android:padding="4dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="Addition"
+                android:textSize="25sp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/question_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="Question No. 1"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="23 * 34 = ?"
+                android:textSize="17sp"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/answer"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/et_bg"
+                android:gravity="start"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_color"
+                android:hint="Write answer here..."
+                android:textSize="14sp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/next"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:background="@drawable/btn_bg"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="25dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:alpha=".1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/math_bg" />
+
+</RelativeLayout>

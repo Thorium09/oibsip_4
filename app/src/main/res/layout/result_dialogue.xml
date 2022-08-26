@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/result_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/stars"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:padding="90dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/star3_empty"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_height="42dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:text="Correct Answers"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/correct_ans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:text="23"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_height="42dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wrong Answers"
+                            android:textSize="17sp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/wrong_ans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:text="23"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:visibility="gone"
+                            android:background="@color/gray"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="30dp"
+                        android:layout_height="42dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Skip Questions"
+                            android:textSize="17sp"
+                            android:visibility="gone"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/skip_qs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23"
+                            android:textSize="19sp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="horizontal"
+                        android:elevation="3dp"
+                        android:background="@drawable/btn_bg"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp">
+
+                        <TextView
+                            android:id="@+id/ok"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingStart="25dp"
+                            android:text="Ok"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
